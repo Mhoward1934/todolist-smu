@@ -1,5 +1,10 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
+const Sequelize = require('sequelize');
+
+const config = require('dotenv').config();
+
+const db = require("./models");
 
 const PORT = process.env.PORT || 3000;
 
